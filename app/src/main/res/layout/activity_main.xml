@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:contentDescription="@string/set_image_Here"
+                    android:focusable="true"
+                    app:srcCompat="@android:drawable/ic_menu_report_image" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_top"
+                android:orientation="vertical"
+                app:layout_constraintHorizontal_bias="1.0">
+
+                <Button
+                    android:id="@+id/btn_rotate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/click_to_rotate"
+                    android:text="@string/rotate_Btn" />
+
+                <Button
+                    android:id="@+id/btn_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/click_to_change_clr"
+                    android:text="@string/change_Color_Button" />
+
+                <Button
+                    android:id="@+id/btn_mirror"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/click_to_mirror"
+                    android:text="@string/mirror_Button" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_weight="2"
+            android:id="@+id/result_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    />
+
+</LinearLayout>

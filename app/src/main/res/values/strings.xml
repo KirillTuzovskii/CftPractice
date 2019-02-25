@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">practice</string>
+    <string name="click_to_rotate">click to rotate</string>
+    <string name="rotate_Btn">Rotate</string>
+    <string name="click_to_change_clr">Click to change color</string>
+    <string name="change_Color_Button">Change color</string>
+    <string name="click_to_mirror">Click to Mirror</string>
+    <string name="mirror_Button">Mirror</string>
+    <string name="set_image_Here">Set image here</string>
+
+/*URL*/
+
+    <string name="download_from_URL">Загрузить URL</string>
+    <string name="ok">Загрузить</string>
+    <string name="cancel">Отмена</string>
+    <string name="wrong_URL">Введен неверный URL</string>
+    <string name="processing_download">Идёт загрузка.</string>
+    <string name="error_set_image">картинка не установлена</string>
+
+/*Dialogs*/
+
+    <string name="take_photo">Камера</string>
+    <string name="gallery">Галерея</string>
+    <string name="url">URL</string>
+    <string name="dialog_title">Выберите источник изображения:</string>
+    <string name="make_source">Сделать источником</string>
+    <string name="delete">Удалить</string>
+    <string name="action_title">Выберите действие</string>
+
+</resources>
